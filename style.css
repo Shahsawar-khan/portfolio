@@ -1514,3 +1514,59 @@ textarea:focus-visible {
 #contact {
     scroll-margin-top: 72px;
 }
+
+/* ==========================================================
+   MOBILE OVERFLOW FIX (Horizontal Scroll & Image Issue)
+   ========================================================== */
+
+/* 1. Poori website ko horizontal scroll se rokne ke liye */
+html, body {
+    overflow-x: hidden !important;
+    width: 100%;
+}
+
+/* 2. Images ko kabhi bhi apne container se bahar jaane se rokne ke liye */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+}
+
+/* 3. Grid items ko force karein ke wo shrink hon (min-width bug fix) */
+.about-inner, .hero-inner, .contact-inner, 
+.skills-grid, .projects-grid, .footer-top,
+.about-image, .hero-image, .project-image {
+    min-width: 0;
+}
+
+/* 4. Lambi Email/Text ko screen se bahar jaane se rokne ke liye */
+.personal-info li {
+    word-break: break-word;
+    flex-wrap: wrap;
+}
+
+/* 5. Mobile Media Query - Force Single Column */
+@media (max-width: 768px) {
+    .about-inner, 
+    .hero-inner, 
+    .contact-inner {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+    
+    .personal-info {
+        grid-template-columns: 1fr !important;
+        padding: 18px !important;
+    }
+    
+    .about-boxes {
+        grid-template-columns: 1fr !important;
+    }
+
+    .about-image img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
