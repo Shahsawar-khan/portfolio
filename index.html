@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shahsawar Khan | Web & Laravel Developer</title>
+    <title>Shahsawar Khan | Full Stack Web Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- ===== Header / Navbar ===== -->
+    <!-- ===== NAVBAR ===== -->
     <header class="header">
         <div class="container header-inner">
-
             <a href="#home" class="logo">Shahsawar<span>.</span></a>
 
-            <!-- Mobile menu toggle (CSS will handle the styling) -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="menu-btn">
                 <span></span>
@@ -27,230 +27,203 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </header>
 
     <main>
 
-        <!-- ===== Home / Hero Section ===== -->
+        <!-- ===== HERO SECTION ===== -->
         <section class="hero" id="home">
             <div class="container hero-inner">
-
                 <div class="hero-text">
                     <p class="hero-greeting">Hello, I'm</p>
                     <h1 class="hero-name">Shahsawar Khan</h1>
-                    <p class="hero-tagline">Web Developer &nbsp;|&nbsp; Laravel Developer &nbsp;|&nbsp; CS Teacher</p>
+                    <p class="hero-tagline">Full Stack Web Developer &nbsp;|&nbsp; Laravel &amp; PHP Specialist</p>
 
                     <p class="hero-intro">
                         BS Computer Software graduate from Abdul Wali Khan University, Mardan.
-                        I build modern, scalable web applications with Laravel, PHP and clean
-                        front-end code — currently teaching Computer Science while working on
-                        real-world projects.
+                        I build modern, scalable web applications and management systems with
+                        Laravel 11, PHP, MySQL, and REST APIs.
                     </p>
 
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-outline">Hire Me</a>
+                        <a href="Shahsawar_Khan_CV.pdf" download class="btn btn-outline">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
                     </div>
 
                     <ul class="social-links">
-                        <li><a href="https://github.com/Shahsawar-khan" target="_blank" rel="noopener">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/shahsawar-khan-14612029a/" target="_blank" rel="noopener">LinkedIn</a></li>
-                        <li><a href="mailto:shahsawarbhai0315@gmail.com">Email</a></li>
+                        <li><a href="https://github.com/Shahsawar-khan" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/shahsawar-khan-14612029a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="mailto:shahsawarbhai0315@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
                     </ul>
                 </div>
 
                 <div class="hero-image">
+                    <div class="image-glow"></div>
                     <img src="images/profile.jpg" alt="Shahsawar Khan">
                 </div>
-
             </div>
         </section>
 
-        <!-- ===== About Section ===== -->
+        <!-- ===== ABOUT SECTION ===== -->
         <section class="about" id="about">
             <div class="container">
-
                 <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">A developer who loves building clean, scalable web applications.</p>
 
                 <div class="about-inner">
-
-                    <div class="about-image">
-                        <img src="images/about.jpg" alt="Shahsawar Khan working on a project">
-                    </div>
-
                     <div class="about-text">
-                        <h3>A developer who loves building clean, scalable web applications.</h3>
-
                         <p>
-                            I'm Shahsawar Khan, a BS Computer Software graduate from Abdul Wali
-                            Khan University, Mardan. My journey started with plain HTML and CSS,
-                            and has grown into full-stack Laravel development with a strong
-                            focus on clean code and good user experience.
+                            I'm Shahsawar Khan, a Full Stack Web Developer with a BS in Computer
+                            Software from Abdul Wali Khan University, Mardan. My journey started
+                            with HTML and CSS, and has grown into full-stack Laravel development
+                            with a strong focus on clean code and great user experience.
                         </p>
-
                         <p>
-                            Currently I work as a Computer Science Teacher at Al Alameen Public
-                            School, Mardan. Teaching keeps my fundamentals sharp and helps me
-                            explain technical concepts clearly.
+                            I completed multiple remote internships at <strong>Rhombix Technologies</strong>,
+                            <strong>Devixo Solutions</strong>, and <strong>EPR</strong>, where I built 10+ real-world
+                            projects including blogging platforms, food ordering systems, and
+                            management systems. I'm currently expanding my skills in React.
                         </p>
 
                         <ul class="personal-info">
                             <li><span>Name:</span> Shahsawar Khan</li>
                             <li><span>Degree:</span> BS Computer Software</li>
                             <li><span>Location:</span> Mardan, Pakistan</li>
-                            <li><span>Email:</span> shahsawarkhan7676@gmail.com</li>
+                            <li><span>Email:</span> shahsawarbhai0315@gmail.com</li>
                             <li><span>Languages:</span> English, Urdu, Pashto</li>
                             <li><span>Freelance:</span> Available</li>
                         </ul>
 
                         <div class="about-boxes">
                             <div class="about-box">
-                                <h4>Academic Background</h4>
-                                <p>
-                                    BS in Computer Software from Abdul Wali Khan University,
-                                    Mardan (2019 - 2023) with a CGPA of 3.15 / 4.00.
-                                </p>
+                                <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                                <p>BS in Computer Software from AWKUM, Mardan (2019 - 2023) with a CGPA of 3.15 / 4.00.</p>
                             </div>
                             <div class="about-box">
-                                <h4>Career Interests</h4>
-                                <p>
-                                    Full-stack web development with Laravel, REST APIs and
-                                    modern front-end. Currently expanding skills in React.
-                                </p>
+                                <h4><i class="fas fa-bullseye"></i> Career Goal</h4>
+                                <p>Full-stack web development with Laravel, REST APIs, and modern front-end. Currently learning React.</p>
                             </div>
                         </div>
 
                         <a href="#contact" class="btn btn-primary">Let's Work Together</a>
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- ===== Skills Section ===== -->
+        <!-- ===== SKILLS SECTION ===== -->
         <section class="skills" id="skills">
             <div class="container">
-
                 <h2 class="section-title">My Skills</h2>
-                <p class="section-subtitle">
-                    Technologies and tools I use regularly to design and build
-                    complete web applications.
-                </p>
+                <p class="section-subtitle">Technologies and tools I use to design and build complete web applications.</p>
 
                 <div class="skills-grid">
 
                     <div class="skill-card">
-                        <h3>HTML5</h3>
-                        <p>Semantic markup and SEO-friendly structure.</p>
-                        <div class="progress">
-                            <div class="progress-bar bar-95"></div>
-                        </div>
-                        <span class="percent">95%</span>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>CSS3</h3>
-                        <p>Flexbox, Grid and responsive layouts.</p>
-                        <div class="progress">
-                            <div class="progress-bar bar-92"></div>
-                        </div>
-                        <span class="percent">92%</span>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>JavaScript</h3>
-                        <p>DOM, events and interactive UI behaviour.</p>
-                        <div class="progress">
-                            <div class="progress-bar bar-80"></div>
-                        </div>
-                        <span class="percent">80%</span>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Bootstrap</h3>
-                        <p>Rapid responsive layouts and components.</p>
-                        <div class="progress">
-                            <div class="progress-bar bar-88"></div>
-                        </div>
-                        <span class="percent">88%</span>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>jQuery</h3>
-                        <p>DOM manipulation and dynamic interactivity.</p>
-                        <div class="progress">
-                            <div class="progress-bar bar-75"></div>
-                        </div>
-                        <span class="percent">75%</span>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>PHP</h3>
-                        <p>Server-side scripting and secure form handling.</p>
-                        <div class="progress">
-                            <div class="progress-bar bar-88"></div>
-                        </div>
-                        <span class="percent">88%</span>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Laravel</h3>
-                        <p>MVC, Eloquent ORM, Blade and authentication.</p>
-                        <div class="progress">
-                            <div class="progress-bar bar-90"></div>
-                        </div>
+                        <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                        <h3>Laravel 11</h3>
+                        <p>MVC, Eloquent ORM, Blade, Authentication, REST APIs</p>
+                        <div class="progress"><div class="progress-bar" data-width="90"></div></div>
                         <span class="percent">90%</span>
                     </div>
 
                     <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-php"></i></div>
+                        <h3>PHP 8.2</h3>
+                        <p>Server-side scripting, OOP, secure form handling</p>
+                        <div class="progress"><div class="progress-bar" data-width="88"></div></div>
+                        <span class="percent">88%</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
                         <h3>MySQL</h3>
-                        <p>Database design, queries and CRUD integration.</p>
-                        <div class="progress">
-                            <div class="progress-bar bar-85"></div>
-                        </div>
+                        <p>Database design, queries, and CRUD integration</p>
+                        <div class="progress"><div class="progress-bar" data-width="85"></div></div>
                         <span class="percent">85%</span>
                     </div>
 
                     <div class="skill-card">
-                        <h3>WordPress</h3>
-                        <p>Themes, plugins and content-driven websites.</p>
-                        <div class="progress">
-                            <div class="progress-bar bar-80"></div>
-                        </div>
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h3>HTML5</h3>
+                        <p>Semantic markup and SEO-friendly structure</p>
+                        <div class="progress"><div class="progress-bar" data-width="95"></div></div>
+                        <span class="percent">95%</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <h3>CSS3</h3>
+                        <p>Flexbox, Grid, and responsive layouts</p>
+                        <div class="progress"><div class="progress-bar" data-width="92"></div></div>
+                        <span class="percent">92%</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <h3>JavaScript</h3>
+                        <p>DOM, events, AJAX, and interactive UI</p>
+                        <div class="progress"><div class="progress-bar" data-width="80"></div></div>
                         <span class="percent">80%</span>
                     </div>
 
                     <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-wind"></i></div>
+                        <h3>Tailwind CSS</h3>
+                        <p>Utility-first CSS for rapid UI development</p>
+                        <div class="progress"><div class="progress-bar" data-width="88"></div></div>
+                        <span class="percent">88%</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                        <h3>Bootstrap</h3>
+                        <p>Rapid responsive layouts and components</p>
+                        <div class="progress"><div class="progress-bar" data-width="88"></div></div>
+                        <span class="percent">88%</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
                         <h3>Git &amp; GitHub</h3>
-                        <p>Version control and repository workflows.</p>
-                        <div class="progress">
-                            <div class="progress-bar bar-85"></div>
-                        </div>
+                        <p>Version control and repository workflows</p>
+                        <div class="progress"><div class="progress-bar" data-width="85"></div></div>
                         <span class="percent">85%</span>
                     </div>
 
                     <div class="skill-card">
-                        <h3>REST API</h3>
-                        <p>Consuming and exposing REST endpoints.</p>
-                        <div class="progress">
-                            <div class="progress-bar bar-70"></div>
-                        </div>
-                        <span class="percent">70%</span>
+                        <div class="skill-icon"><i class="fas fa-plug"></i></div>
+                        <h3>REST APIs</h3>
+                        <p>Building and consuming REST endpoints</p>
+                        <div class="progress"><div class="progress-bar" data-width="78"></div></div>
+                        <span class="percent">78%</span>
                     </div>
 
                     <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
+                        <h3>WordPress</h3>
+                        <p>Themes, plugins, and content-driven websites</p>
+                        <div class="progress"><div class="progress-bar" data-width="80"></div></div>
+                        <span class="percent">80%</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
                         <h3>React</h3>
-                        <p>Component-based UI — currently learning.</p>
-                        <div class="progress">
-                            <div class="progress-bar bar-40"></div>
-                        </div>
+                        <p>Component-based UI — currently learning</p>
+                        <div class="progress"><div class="progress-bar" data-width="40"></div></div>
                         <span class="percent">40%</span>
                     </div>
 
@@ -258,232 +231,328 @@
             </div>
         </section>
 
-        <!-- ===== Education & Experience Section ===== -->
-        <section class="education" id="education">
+        <!-- ===== EXPERIENCE SECTION ===== -->
+        <section class="experience" id="experience">
             <div class="container">
+                <h2 class="section-title">Experience &amp; Education</h2>
+                <p class="section-subtitle">Where I worked, studied, and how I keep growing as a developer.</p>
 
-                <h2 class="section-title">Education &amp; Experience</h2>
-                <p class="section-subtitle">
-                    Where I studied, where I work, and how I keep growing as a developer.
-                </p>
-
-                <h3 class="sub-heading">Education</h3>
+                <h3 class="sub-heading"><i class="fas fa-briefcase"></i> Professional Experience</h3>
                 <div class="timeline">
 
                     <div class="timeline-item">
-                        <span class="timeline-date">2019 - 2023</span>
-                        <h4>BS Computer Software</h4>
-                        <p class="timeline-place">Abdul Wali Khan University, Mardan</p>
+                        <span class="timeline-date">Oct 2026 – Present</span>
+                        <h4>Web Development Intern</h4>
+                        <p class="timeline-place">Devixo Solutions — Remote</p>
                         <p class="timeline-desc">
-                            Studied programming fundamentals, data structures, databases,
-                            web technologies and software engineering. Graduated with a
-                            CGPA of 3.15 / 4.00.
+                            Working on real-world web development projects, collaborating with the
+                            team, and completing assigned tasks successfully.
                         </p>
                     </div>
 
-                </div>
-
-                <h3 class="sub-heading">Experience</h3>
-                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">2026</span>
+                        <h4>Web Development Intern</h4>
+                        <p class="timeline-place">Rhombix Technologies — Remote</p>
+                        <p class="timeline-desc">
+                            Completed 8+ major full-stack web applications including BlogHub,
+                            FoodHub, Library System, and Travel Booking. Implemented secure
+                            authentication, rich text editors, image uploads, and AJAX cart systems.
+                        </p>
+                    </div>
 
                     <div class="timeline-item">
-                        <span class="timeline-date">Present</span>
+                        <span class="timeline-date">2026 – Present</span>
+                        <h4>Remote Staff Member</h4>
+                        <p class="timeline-place">EPR (Employment Processing Resource)</p>
+                        <p class="timeline-desc">
+                            Assisted students and job seekers with CV building, job application
+                            guidance, and career counseling. Facilitated overseas job placements
+                            and work-study abroad programs.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-date">2024 – 2026</span>
                         <h4>Computer Science Teacher</h4>
                         <p class="timeline-place">Al Alameen Public School, Mardan</p>
                         <p class="timeline-desc">
-                            Teach Computer Science subjects, prepare lesson plans and
-                            practical programming activities, and guide students in
-                            computer fundamentals and software applications.
-                        </p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="timeline-date">Ongoing</span>
-                        <h4>Self-Practice Web Developer</h4>
-                        <p class="timeline-place">Freelance &amp; Personal Projects</p>
-                        <p class="timeline-desc">
-                            Build responsive web applications with Laravel and PHP,
-                            complete CRUD systems with authentication and database
-                            integration, and maintain all work on GitHub.
+                            Taught Computer Science subjects, prepared lesson plans and practical
+                            programming activities, and guided students in computer fundamentals.
                         </p>
                     </div>
 
                 </div>
+
+                <h3 class="sub-heading"><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <span class="timeline-date">2019 – 2023</span>
+                        <h4>BS Computer Software</h4>
+                        <p class="timeline-place">Abdul Wali Khan University, Mardan</p>
+                        <p class="timeline-desc">
+                            Studied programming fundamentals, data structures, databases, web
+                            technologies, and software engineering. Graduated with a CGPA of
+                            3.15 / 4.00.
+                        </p>
+                    </div>
+
+                </div>
+
+                <h3 class="sub-heading"><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <i class="fas fa-award"></i>
+                        <h4>Full Stack Web Development</h4>
+                        <p>eHunar.pk</p>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-award"></i>
+                        <h4>PHP Laravel Certification</h4>
+                        <p>eHunar.pk</p>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-award"></i>
+                        <h4>Web Development</h4>
+                        <p>ECI (Employment Thru Creative Integration)</p>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-award"></i>
+                        <h4>Web Development Internship</h4>
+                        <p>Rhombix Technologies</p>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-award"></i>
+                        <h4>Web Development Internship</h4>
+                        <p>Devixo Solutions</p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- ===== Projects Section ===== -->
+        <!-- ===== PROJECTS SECTION ===== -->
         <section class="projects" id="projects">
             <div class="container">
-
                 <h2 class="section-title">My Projects</h2>
-                <p class="section-subtitle">
-                    A selection of Laravel projects I have designed and developed —
-                    full source code available on GitHub.
-                </p>
+                <p class="section-subtitle">A selection of full-stack projects I've designed and developed.</p>
 
                 <div class="projects-grid">
 
-                    <!-- Project 1 -->
                     <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-portfolio.jpg" alt="Portfolio Website project screenshot">
-                        </div>
-                        <div class="project-body">
-                            <h3>Portfolio Website</h3>
-                            <p>
-                                Responsive personal portfolio website built with Laravel,
-                                showcasing projects, technical skills, education and
-                                professional experience with a clean modern UI.
-                            </p>
-                            <ul class="tech-list">
-                                <li>Laravel</li>
-                                <li>PHP</li>
-                                <li>MySQL</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/Shahsawar-khan" target="_blank" rel="noopener">GitHub</a>
-                                <a href="#" target="_blank" rel="noopener">Live Demo</a>
-                            </div>
+                        <div class="project-icon"><i class="fas fa-blog"></i></div>
+                        <h3>BlogHub — Blogging Platform</h3>
+                        <p>Complete blogging system with user authentication, post management, comment moderation, and category/tag filtering.</p>
+                        <ul class="tech-list">
+                            <li>Laravel 11</li><li>MySQL</li><li>Tailwind</li><li>TinyMCE</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Shahsawar-khan/RhombixTechnologies_Blogginghub" target="_blank"><i class="fab fa-github"></i> Code</a>
                         </div>
                     </div>
 
-                    <!-- Project 2 -->
                     <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-restaurant.jpg" alt="SHWARIZO Restaurant Website screenshot">
-                        </div>
-                        <div class="project-body">
-                            <h3>SHWARIZO Restaurant Website</h3>
-                            <p>
-                                Modern restaurant website featuring dynamic menu management,
-                                responsive design, image gallery and a working contact
-                                section — built end-to-end in Laravel.
-                            </p>
-                            <ul class="tech-list">
-                                <li>Laravel</li>
-                                <li>PHP</li>
-                                <li>MySQL</li>
-                                <li>JavaScript</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/Shahsawar-khan" target="_blank" rel="noopener">GitHub</a>
-                                <a href="#" target="_blank" rel="noopener">Live Demo</a>
-                            </div>
+                        <div class="project-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>FoodHub — Food Ordering Platform</h3>
+                        <p>Food ordering system with real-time AJAX cart updates, secure checkout (COD/Easypaisa), and admin dashboard.</p>
+                        <ul class="tech-list">
+                            <li>Laravel 11</li><li>REST APIs</li><li>AJAX</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Shahsawar-khan/RhombixFoodhub" target="_blank"><i class="fab fa-github"></i> Code</a>
                         </div>
                     </div>
 
-                    <!-- Project 3 -->
                     <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-todo.jpg" alt="ToDo List Application screenshot">
+                        <div class="project-icon"><i class="fas fa-book"></i></div>
+                        <h3>Book Library Management</h3>
+                        <p>Library system to manage books, members, issue/return tracking, and admin dashboards.</p>
+                        <ul class="tech-list">
+                            <li>Laravel</li><li>MySQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Shahsawar-khan/RhombixBookLibrary" target="_blank"><i class="fab fa-github"></i> Code</a>
                         </div>
-                        <div class="project-body">
-                            <h3>ToDo List Application</h3>
-                            <p>
-                                Task management application with full CRUD functionality,
-                                user authentication, a clean user-friendly interface and
-                                complete MySQL database integration.
-                            </p>
-                            <ul class="tech-list">
-                                <li>Laravel</li>
-                                <li>PHP</li>
-                                <li>MySQL</li>
-                                <li>Auth</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/Shahsawar-khan" target="_blank" rel="noopener">GitHub</a>
-                                <a href="#" target="_blank" rel="noopener">Live Demo</a>
-                            </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fas fa-plane"></i></div>
+                        <h3>Travel Booking System</h3>
+                        <p>Travel booking platform with package searching, booking management, and admin controls.</p>
+                        <ul class="tech-list">
+                            <li>Laravel</li><li>MySQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Shahsawar-khan/RhombixTravelBooking" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fas fa-users"></i></div>
+                        <h3>Social Network Platform</h3>
+                        <p>Social networking platform with user profiles, posts, likes, comments, and a follow system.</p>
+                        <ul class="tech-list">
+                            <li>Laravel</li><li>AJAX</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Shahsawar-khan/rhombixsocialnetwork_tasks" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fas fa-user-tie"></i></div>
+                        <h3>Portfolio Website</h3>
+                        <p>Responsive personal portfolio website showcasing projects, skills, and experience.</p>
+                        <ul class="tech-list">
+                            <li>HTML</li><li>CSS</li><li>JS</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://shahsawar-khan.github.io/portfolio/" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="https://github.com/Shahsawar-khan/portfolio" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>SHWARIZO Restaurant</h3>
+                        <p>Modern restaurant website with menu management, gallery, and contact section.</p>
+                        <ul class="tech-list">
+                            <li>Laravel</li><li>Bootstrap</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Shahsawar-khan/shwarizo" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fas fa-tasks"></i></div>
+                        <h3>ToDo List Application</h3>
+                        <p>Task management application with full CRUD functionality and database integration.</p>
+                        <ul class="tech-list">
+                            <li>Laravel</li><li>MySQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Shahsawar-khan/RhombixTechnologies_Tasks_Todo_List" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fas fa-store"></i></div>
+                        <h3>Kashi Food Store</h3>
+                        <p>E-commerce store for food products with cart and order management.</p>
+                        <ul class="tech-list">
+                            <li>Laravel</li><li>MySQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Shahsawar-khan/kashi-food-store" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fas fa-music"></i></div>
+                        <h3>Music Player Web App</h3>
+                        <p>Browser-based music player with playlists and controls.</p>
+                        <ul class="tech-list">
+                            <li>HTML</li><li>CSS</li><li>JS</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Shahsawar-khan/Rhombix-Music-Player" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fas fa-people-group"></i></div>
+                        <h3>Street Union <span class="badge">Ongoing</span></h3>
+                        <p>Community platform with user profiles, posts, and interaction features.</p>
+                        <ul class="tech-list">
+                            <li>Laravel</li><li>MySQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Shahsawar-khan/street-union" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon"><i class="fas fa-industry"></i></div>
+                        <h3>Flour Mill Management <span class="badge">Ongoing</span></h3>
+                        <p>Inventory and operations management system for a flour mill business.</p>
+                        <ul class="tech-list">
+                            <li>Laravel</li><li>MySQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <span class="in-dev">In Development</span>
                         </div>
                     </div>
 
                 </div>
 
                 <div class="projects-cta">
-                    <a href="https://github.com/Shahsawar-khan" target="_blank" rel="noopener" class="btn btn-outline">
-                        View All on GitHub
+                    <a href="https://github.com/Shahsawar-khan" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-github"></i> View All on GitHub
                     </a>
                 </div>
-
             </div>
         </section>
 
-        <!-- ===== Contact Section ===== -->
+        <!-- ===== CONTACT SECTION ===== -->
         <section class="contact" id="contact">
             <div class="container">
-
                 <h2 class="section-title">Contact Me</h2>
-                <p class="section-subtitle">
-                    Have a project in mind, or just want to say hello?
-                    I usually reply within 24 hours.
-                </p>
+                <p class="section-subtitle">Have a project in mind? Let's talk — I usually reply within 24 hours.</p>
 
                 <div class="contact-inner">
 
-                    <!-- Contact info -->
                     <div class="contact-info">
                         <h3>Contact Information</h3>
-                        <p>
-                            Reach me through any of these channels — I'm always
-                            open to discussing new opportunities.
-                        </p>
+                        <p>Reach me through any of these channels — I'm always open to discussing new opportunities.</p>
 
                         <ul class="info-list">
                             <li>
-                                <span class="info-label">Email</span>
-                                <a href="mailto:shahsawarbhai0315@gmail.com">shahsawarkhan7676@gmail.com</a>
+                                <span class="info-label"><i class="fas fa-envelope"></i> Email</span>
+                                <a href="mailto:shahsawarbhai0315@gmail.com">shahsawarbhai0315@gmail.com</a>
                             </li>
                             <li>
-                                <span class="info-label">Phone</span>
+                                <span class="info-label"><i class="fas fa-phone"></i> Phone</span>
                                 <a href="tel:+923481549798">+92 348 1549798</a>
                             </li>
                             <li>
-                                <span class="info-label">Location</span>
+                                <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span>
                                 <span>Mardan, Pakistan</span>
                             </li>
                             <li>
-                                <span class="info-label">GitHub</span>
-                                <a href="https://github.com/Shahsawar-khan" target="_blank" rel="noopener">github.com/Shahsawar-khan</a>
+                                <span class="info-label"><i class="fab fa-github"></i> GitHub</span>
+                                <a href="https://github.com/Shahsawar-khan" target="_blank">github.com/Shahsawar-khan</a>
                             </li>
                             <li>
-                                <span class="info-label">LinkedIn</span>
-                                <a href="https://www.linkedin.com/in/shahsawar-khan-14612029a/" target="_blank" rel="noopener">linkedin.com/in/shahsawar-khan</a>
+                                <span class="info-label"><i class="fab fa-linkedin"></i> LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/shahsawar-khan-14612029a/" target="_blank">linkedin.com/in/shahsawar-khan</a>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- Contact form -->
                     <div class="contact-form-wrap">
                         <h3>Send Me a Message</h3>
-
-                        <form class="contact-form" action="#" method="post">
-
+                        <form class="contact-form" action="https://formspree.io/f/xnpjgrjd" method="POST">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="name">Full Name</label>
-                                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                    <input type="text" id="name" name="name" placeholder="Your full name" required>
                                 </div>
-
                                 <div class="form-group">
                                     <label for="email">Email Address</label>
-                                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <label for="subject">Subject</label>
                                 <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
                             </div>
-
                             <div class="form-group">
                                 <label for="message">Message</label>
                                 <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
                             </div>
-
                             <button type="submit" class="btn btn-primary">Send Message</button>
-
                         </form>
                     </div>
 
@@ -493,23 +562,17 @@
 
     </main>
 
-    <!-- ===== Footer ===== -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
-
             <div class="footer-top">
-
                 <div class="footer-col">
                     <a href="#home" class="logo">Shahsawar<span>.</span></a>
-                    <p>
-                        Web &amp; Laravel Developer from Mardan, Pakistan —
-                        building modern, scalable and user-focused web applications.
-                    </p>
-
+                    <p>Full Stack Web Developer from Mardan, Pakistan — building modern, scalable, and user-focused web applications.</p>
                     <ul class="social-links">
-                        <li><a href="https://github.com/Shahsawar-khan" target="_blank" rel="noopener">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/shahsawar-khan-14612029a/" target="_blank" rel="noopener">LinkedIn</a></li>
-                        <li><a href="mailto:shahsawarbhai0315@gmail.com">Email</a></li>
+                        <li><a href="https://github.com/Shahsawar-khan" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/shahsawar-khan-14612029a/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="mailto:shahsawarbhai0315@gmail.com"><i class="fas fa-envelope"></i></a></li>
                     </ul>
                 </div>
 
@@ -519,7 +582,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
-                        <li><a href="#education">Education</a></li>
+                        <li><a href="#experience">Experience</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -530,30 +593,34 @@
                     <ul class="footer-links">
                         <li>Laravel Development</li>
                         <li>PHP Web Applications</li>
+                        <li>Management Systems</li>
+                        <li>REST API Development</li>
                         <li>Responsive Front-End</li>
-                        <li>WordPress Websites</li>
-                        <li>Database Design (MySQL)</li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Get In Touch</h4>
                     <ul class="footer-links">
-                        <li><a href="mailto:shahsawarkhan7676@gmail.com">shahsawarkhan7676@gmail.com</a></li>
+                        <li><a href="mailto:shahsawarbhai0315@gmail.com">shahsawarbhai0315@gmail.com</a></li>
                         <li><a href="tel:+923481549798">+92 348 1549798</a></li>
                         <li>Mardan, Pakistan</li>
                     </ul>
                 </div>
-
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Shahsawar Khan. All rights reserved.</p>
-                <p>Designed &amp; developed with HTML5 &amp; CSS3.</p>
+                <p>&copy; 2026 Shahsawar Khan. All rights reserved.</p>
+                <p>Designed &amp; developed with <i class="fas fa-heart"></i> using HTML, CSS &amp; JavaScript.</p>
             </div>
-
         </div>
     </footer>
 
+    <!-- Scroll to top -->
+    <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
